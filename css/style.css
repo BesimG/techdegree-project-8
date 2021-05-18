@@ -76,6 +76,57 @@ p {
     left: 0;
     right: 0;
     bottom: 0;
-    background: rgba(100, 100, 100, 0.4)
+    background: rgba(100, 100, 100, 0.4);
+    /* display: flex; */
 }
 
+.modal {
+    width: 320px;
+    height: 400px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 55px;
+    background: white;
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+    align-items: center;
+}
+
+.modal-close {
+    width: 40px;
+    font-size: 1.2em;
+    margin-top: 5px;
+    margin-right: 20px;
+    margin-left: auto;
+    background-color: transparent; 
+    border: none;
+}
+
+.modal img 
+
+.modal-content {
+    display: flex;
+}
+
+.modal .avatar {
+    height: 130px;
+}
+
+.modal .text-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+.modal .text-container p {
+    margin-top: 8px;
+}
+
+hr {
+    width: 150%;
+    margin: 25px 0 20px 0;
+    
+    color: rgba(79, 79, 79, 0.7);
+}
