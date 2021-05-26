@@ -72,7 +72,7 @@ function displayModal(index) {
         modalContainer.innerHTML = modalHTML;
 }
 
-// eventListener
+// eventListener for gridContainer
 
 gridContainer.addEventListener('click', e => {
 
@@ -86,4 +86,10 @@ gridContainer.addEventListener('click', e => {
 
         displayModal(index);
     }
+});
+
+// eventListener for modal overlay
+
+modalClose.addEventListener('click', () => {
+    overlay.classList.add("hidden");
 });
