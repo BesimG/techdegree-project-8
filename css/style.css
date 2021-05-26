@@ -5,7 +5,7 @@
 
 body {
     position: relative;
-    font-size: 16px;
+    font-size: 17px;
     font-family: 'Roboto', sans-serif;
     color: rgba(79, 79, 79, 0.7);
     background-color: rgb(252, 252, 252);
@@ -42,7 +42,9 @@ p {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: repeat(4, 1fr);
-    grid-gap: 23px;
+    grid-gap: 25px;
+    justify-content: center;
+    
 }
 
 .card {
@@ -52,7 +54,8 @@ p {
     align-items: center;
     border: 2px solid rgba(201, 76, 76, 0.3);
     border-radius: 5px;
-    width: 310px;
+    width: 350px;
+    height: 145px;
 }
 
 .avatar {
@@ -79,14 +82,20 @@ p {
 }
 
 .modal {
-    width: 320px;
-    height: 400px;
+    width: 400px;
+    height: 440px;
     margin-left: auto;
     margin-right: auto;
-    margin-top: 55px;
+    margin-top: 95px;
     background: white;
     border-radius: 5px;
 }
+
+/* .text-container hr {
+    width: 260px;
+    margin-left: auto;
+    margin-right: auto;
+} */
 
 .modal-close {
     width: 40px;
@@ -105,7 +114,7 @@ p {
 }
 
 .modal .avatar {
-    height: 130px;
+    height: 140px;
 }
 
 .modal .text-container {
@@ -116,11 +125,13 @@ p {
 }
 
 .modal .text-container p {
-    margin-top: 8px;
+    margin-top: 13px;
 }
 
 hr {
-    width: 170%;
+    width: 300px;
+    margin-left: auto;
+    margin-right: auto;
     margin: 25px 0 20px 0;
     color: rgba(79, 79, 79, 0.7);
 }
