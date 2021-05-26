@@ -32,12 +32,12 @@ function displayEmployees(employeeData) {
 
         // template literals
         employeeHTML += `
-            <div class = "card" data-index = "${index}">
-                <img class = "avatar" src = "${picture.large}">
-                <div class = "text-container">
-                    <h2 class = "name">${name.first} ${name.last}</h2>
-                    <p class = "email">${email}</p> 
-                    <p class = "address">${city}</p>
+            <div class="card" data-index="${index}">
+                <img class="avatar" src="${picture.large}">
+                <div class="text-container">
+                    <h2 class="name">${name.first} ${name.last}</h2>
+                    <p class="email">${email}</p> 
+                    <p class="address">${city}</p>
                 </div>
             </div>        
         `
@@ -55,14 +55,14 @@ function displayModal(index) {
         let date = new Date(dob.date);
 
         const modalHTML = `
-            <img class = "avatar" src = "${picture.large}"/>
-            <div class= "text-container">
-                <h2 class = "name">${name.first} ${name.last}</h2>
-                <p class = "email">${email}</p>
-                <p class = "address">${city}</p>
+            <img class="avatar" src="${picture.large}"/>
+            <div class="text-container">
+                <h2 class="name">${name.first} ${name.last}</h2>
+                <p class="email">${email}</p>
+                <p class="address">${city}</p>
                 <hr/>
                 <p>${phone}</p>
-                <p class = "address">${street}, ${state} ${postcode}</p>
+                <p class="address">${street}, ${state} ${postcode}</p>
                 <p>Birthday:
                 ${date.getMonth()}/${date.getDate()}/${date.getFullYear()}</p>
             </div>
