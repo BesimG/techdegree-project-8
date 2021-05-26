@@ -40,7 +40,7 @@ p {
 
 .grid-container {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(3, max-content);
     grid-template-rows: repeat(4, 1fr);
     grid-gap: 25px;
     justify-content: center;
