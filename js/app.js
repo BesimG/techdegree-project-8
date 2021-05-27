@@ -50,21 +50,34 @@ function displayEmployees(employeeData) {
 function displayModal(index) {
 
     // destructuring
-    let { name, dob, phone, email, location: { city, street, state, postcode}, picture } = employees[index];
+    // let { name, dob, phone, email, location: { city, street, state, postcode}, picture } = employees[index];
 
-        let date = new Date(dob.date);
+    //     let date = new Date(dob.date);
+
+    let picture = employees[index].picture;
+    let nameFirst = employees[index].name.first;
+    let nameLast = employees[index].name.last;
+    let email = employees[index].email;
+    let city = employees[index].location.city;
+    let phone = employees[index].phone;
+    let streetNum = employees[index].location.street.number;
+    let streetName = employees[index].location.street.name;
+    let state = employees[index].location.state;
+    let postCode = employees[index].location.postcode;
+    
+    let date = new Date(Date.parse(employees[index].dob.date)).toLocaleDateString(navigator.language)
 
         const modalHTML = `
             <img class="avatar" src="${picture.large}"/>
             <div class="text-container">
-                <h2 class="name">${name.first} ${name.last}</h2>
+                <h2 class="name">${nameFirst} ${nameLast}</h2>
                 <p class="email">${email}</p>
                 <p class="address">${city}</p>
                 <hr/>
                 <p>${phone}</p>
-                <p class="address">${street.number} ${street.name}, ${state} ${postcode}</p>
+                <p class="address">${streetNum} ${streetName}, ${state} ${postCode}</p>
                 <p>Birthday:
-                ${date.getMonth()}/${date.getDate()}/${date.getFullYear()}</p>
+                ${date}</p>
             </div>
         `;
 
