@@ -10,12 +10,12 @@ body {
     color: rgba(79, 79, 79, 0.7);
     background-color: rgb(252, 252, 252);
     letter-spacing: 1.1px;
-    margin-left: 40px;
-    margin-right: 40px;
+    /* margin-left: 40px;
+    margin-right: 40px; */
 }
 
 header {
-    margin: 40px 0 25px 0px;
+    margin: 40px 0 25px 170px;
 }
 
 h1 {
@@ -82,7 +82,7 @@ p {
 }
 
 .modal {
-    width: 400px;
+    width: 380px;
     height: 440px;
     margin-left: auto;
     margin-right: auto;
@@ -90,12 +90,6 @@ p {
     background: white;
     border-radius: 5px;
 }
-
-/* .text-container hr {
-    width: 260px;
-    margin-left: auto;
-    margin-right: auto;
-} */
 
 .modal-close {
     width: 40px;
